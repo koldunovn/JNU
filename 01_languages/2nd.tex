@@ -1,0 +1,177 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+	backgroundcolor=\color{lbcolor},
+	tabsize=4,
+	rulecolor=,
+	language=matlab,
+        basicstyle=\tiny,
+        upquote=true,
+%         aboveskip={1.5\baselineskip},
+        columns=fixed,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+        %frame=single,
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\ttfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+
+
+% \usepackage{default}
+\usetheme{Copenhagen}
+\newcommand{\blankline}{\quad\pagebreak[2]}
+\title{CLACINDIA Workshop \\
+Lab Session\\
+       Part 1:  Programming, why we need it?}
+\author{Nikolay Koldunov}
+
+\date{JNU\\
+       2014}
+
+\pgfdeclareimage[height=0.8cm]{logo}{logos}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\newcommand{\MyLogo}{%
+\begin{textblock}{14}(85.0,81.0)
+  \pgfuseimage{logo}
+\end{textblock}
+}
+
+
+\begin{document}
+
+
+\begin{frame}
+\titlepage
+\MyLogo
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{Programming languages}
+
+A \textbf{Programming language} is an artificial language designed to express computations that can be performed by a machine, particularly a computer. Programming languages can be used to create programs that control the behavior of a machine.
+\begin{center}
+\includegraphics[width=0.5\textwidth,angle=00]{languages.jpg}
+\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{``Hello world!'' program}
+
+\begin{block}{MATLAB}
+  \begin{lstlisting}
+disp('hello world')
+  \end{lstlisting}
+\end{block}
+
+\pause
+
+\begin{block}{FORTRAN 90}
+  \begin{lstlisting}
+PROGRAM HelloWorld
+   WRITE(*,*)  "Hello World!"
+END PROGRAM
+  \end{lstlisting}
+\end{block}
+
+\pause
+
+\begin{block}{C++}
+  \begin{lstlisting}
+#include <iostream.h>
+main()
+{
+    cout << "Hello World!" << endl;
+    return 0;
+}
+  \end{lstlisting}
+\end{block}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{``Hello world!'' program}
+
+\begin{block}{BrainF**k}
+  \begin{lstlisting}
+++++++++++[>+++++++>++++++++++>+++<<<-]>++.>+.+++++++
+..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.
+
+  \end{lstlisting}
+\end{block}
+
+\pause
+
+\begin{block}{Bit}
+  \begin{lstlisting}
+LINENUMBERZEROCODEPRINTZEROGOTOONELINENUMBERONECODEPRINTONEGOTOONEZEROLINENUMBE
+RONEZEROCODEPRINTZEROGOTOONEONELINENUMBERONEONECODEPRINTZEROGOTOONEZEROZEROLINE
+NUMBERONEZEROZEROCODEPRINTONEGOTOONEZEROONELINENUMBERONEZEROONECODEPRINTZEROGOT
+OONEONEZEROLINENUMBERONEONEZEROCODEPRINTZEROGOTOONEONEONELINENUMBERONEONEONECOD
+EPRINTZEROGOTOONEZEROZEROZEROLINENUMBERONEZEROZEROZEROCODEPRINTZEROGOTOONEZEROZ
+EROONELINENUMBERONEZEROZEROONECODEPRINTONEGOTOONEZEROONEZEROLINENUMBERONEZEROON
+
+  \end{lstlisting}
+\end{block}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{Popular programming languages for the Earth Sciences}
+
+\begin{itemize}
+ \item Fortran (Mathematical \textbf{For}mula \textbf{Tran}slating System)
+\pause
+ \item MATLAB (\textbf{Mat}rix \textbf{Lab}oratory) 
+\pause 
+\item Python 
+\pause 
+\item IDL (Interactive Data Language)
+\pause 
+\item bash, csh
+\pause 
+\item NCL (NCAR Command Language)
+
+\end{itemize}
+
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}

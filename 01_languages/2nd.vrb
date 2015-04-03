@@ -1,0 +1,19 @@
+\frametitle{Popular programming languages for the Earth Sciences}
+
+\begin{itemize}
+ \item Fortran (Mathematical \textbf{For}mula \textbf{Tran}slating System)
+\pause
+ \item MATLAB (\textbf{Mat}rix \textbf{Lab}oratory)
+\pause
+\item Python
+\pause
+\item IDL (Interactive Data Language)
+\pause
+\item bash, csh
+\pause
+\item NCL (NCAR Command Language)
+
+\end{itemize}
+
+
+

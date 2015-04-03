@@ -1,0 +1,15 @@
+\frametitle{You already have some programming skills}
+    \begin{block}{Here is the source code of your program:}
+
+      A1+B1
+
+    \end{block}
+\blankline
+    \begin{block}{When you press Enter the program is executed and print the result:}
+      4
+    \end{block}
+\blankline
+\blankline
+\pause
+Programs should be written in a programming language.
+
