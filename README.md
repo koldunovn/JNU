@@ -1,4 +1,4 @@
-# GLACINDIA training program, New Delhi, India, 08-09 April, 2015.
+# GLACINDIA training program, New Delhi, India, 08-10 April, 2015.
 
 Here you will find notebooks that we use during GLACINDIA training program. 
 
